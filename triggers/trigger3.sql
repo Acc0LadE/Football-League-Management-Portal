@@ -1,0 +1,3 @@
+CREATE DEFINER=`root`@`localhost` TRIGGER `fixture_BEFORE_UPDATE` BEFORE UPDATE ON `fixture` FOR EACH ROW BEGIN
+    SET NEW.Last_Updated = NOW();
+END
